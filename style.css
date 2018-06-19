@@ -11,6 +11,14 @@
 
 }
 
+.form-control{
+    position: relative;
+    z-index: 3;
+    margin-top: -50px;
+    width: 200px;
+    float: right;
+}
+
 
 
 
@@ -68,5 +76,11 @@
     background-color: red;
 }.btn4:hover{
     background-color: red;
+}
+#title{
+    position: absolute;
+    z-index: 3;
+    margin-top: -50px;
+    font-size: 55px;
 }
 
