@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /* Cards */
 .card {
@@ -31,3 +32,15 @@ table{
     text-align: right;
     font-size: 11px;
 }
+=======
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+>>>>>>> 9db7544086c792776c60defe69107ed75810555a
