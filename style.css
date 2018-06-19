@@ -1,3 +1,35 @@
-.container{
-    background-image: url("c/image/banner/jpg");
+
+/* Cards */
+.card {
+    padding: 10px;
+    align-items: center;
+    border: 0;
+}
+
+.card img{
+    width: 320px;
+}
+
+.card h4{
+    font-size: 13px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+table{
+    padding: 0px;
+}
+
+.date{
+    text-align: left;
+    margin-left: -150px;
+    font-size: 12px;
+    position: sticky;
+    padding: 0px;
+}
+
+.genre{
+    text-align: right;
+    font-size: 11px;
+    padding: 0px;
 }
