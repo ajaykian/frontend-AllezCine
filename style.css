@@ -22,7 +22,9 @@ html {
 .jumbotron{
     padding: 0px;
     margin: 0px;
-    max-width: auto;
+    width: 100%;
+    max-height: auto;
+    background-color: red;
     
 }
 #carouselExampleIndicators{
@@ -37,9 +39,11 @@ html {
      width: 100%;
 }
 .title{
+    position: relative;
     font-size: 50px;
     color: white;
-    margin-left: -4.5em;
+    margin-top: -10px;
+    margin-left: 0.1em;
     float: left;
     
 }
@@ -47,32 +51,89 @@ html {
     color: red;
 }
 #menu {
-    position: relative;
-    top: 5%;
-    margin:0 65px;
-    margin-top: -2.5em;
+    position: absolute;
+    top: 3%;
+    margin-left: 1em;
     z-index: 3;
     width: 75%;
     float: right;
-    margin-left: 5em;
-    margin-top: -34.0em;
+    margin-top: -1em;
+    padding-top: 15px;
+    }
+    .btn2{
+        position: relative;
+        z-index: 3;
+        margin-top: 5px;
+        border-radius: -20%;
+        height: 40px;
+        width: 75px;
+        filter: opacity(30%);
+        font-size: 12px;
+    }
+    .btn2:hover{
+        background-color: red;
     }
     .navbar-light .navbar-nav .nav-link {
         color: white;
+        margin:0 -0.03em;
+        
         
     }
    
     .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active{
         color: white;
+        font-size: 15px;
+        
     }
+    
+    
+    
     .navbar-light .navbar-brand{
         color: white;
         
     }
-    #jumbotron{
-        background-color:red;
-        height: 35px;
+    
+    
+    .form-control{
+        margin-left: 325px;
+        filter: opacity(30%);
     }
+    #jumbotron{
+        position: auto;
+        background-color:red;
+        height: 125px;
+        max-height: auto;
+        
+    }
+    .navbar-toggler{
+        position: relative;
+        z-index: 3;
+    }
+    .subtitle{
+        position: relative;
+        z-index: 3;
+        color: white;
+        display: inline-block;
+        font-size: 35px;
+        text-align: center;
+        margin:0 15px;
+        margin-left: -10px;
+    }
+    .redsubtitle{
+        position: relative;
+        z-index: 3;
+        color: red;
+        display: inline-block;
+        font-size: 35px;
+        text-align: center;
+        margin:0 10px;
+       
+    }
+    .row{
+        margin-top: -150px;
+        margin-left: 425px;
+    }
+    
     
     
  .card h4{
