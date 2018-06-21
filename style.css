@@ -1,208 +1,85 @@
+html {
+    font-size: 1rem;
+  }
+  
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.6rem;
+    }
+  }
 .jumbotron{
-    height: 530px;
-    width: 1265px;
-    background-color: red;
+    padding: 0px;
+    margin: 0px;
+    max-width: auto;
+    
 }
-
-
 #carouselExampleIndicators{
-    position: absolute;
-    margin-top: -75px;
-    margin-left: -80px;
-    height: 400px;
-    z-index: 2;
-    filter: brightness(0.4);
-    background-size: cover;
-    
-    
-
-}
-
-.form-control{
+    margin-left: 5px;
     position: relative;
+    max-width: auto;
+    z-index: 2;
+    filter: brightness(0.5);
+    
+}
+.imgvh{
+     width: 100%;
+}
+.title{
+    font-size: 50px;
+    color: white;
+    margin-left: -4.5em;
+    float: left;
+    
+}
+.redtitle{
+    color: red;
+}
+#menu {
+    position: relative;
+    top: 5%;
+    margin:0 65px;
+    margin-top: -2.5em;
     z-index: 3;
-    margin-top: -50px;
-    width: 200px;
+    width: 75%;
     float: right;
-    filter: opacity(30%);
-    
-    
-}
-
-
+    margin-left: 5em;
+    margin-top: -34.0em;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: white;
+        
+    }
    
-
-
-
-
-
-.btn1{
-    position: absolute;
-    z-index: 3;
-    border-radius: -20%;
-    margin-left: 350px;
-    height: 40px;
-    width: 75px;
-    filter: opacity(30%);
-    margin-top: -25px;
-    font-size: 12px;
+    .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active{
+        color: white;
+    }
+    .navbar-light .navbar-brand{
+        color: white;
+        
+    }
+    #jumbotron{
+        background-color:red;
+        height: 35px;
+    }
     
-}
-.btn2{
-    position: absolute;
-    z-index: 3;
-    border-radius: -20%;
-    margin-left: 430px;
-    height: 40px;
-    width: 75px;
-    filter: opacity(30%);
-    margin-top: -25px;
-    font-size: 12px;
-}
-.btn3{
-    position: absolute;
-    z-index: 3;
-    border-radius: -20%;
-    margin-left: 510px;
-    height: 40px;
-    width: 75px;
-    filter: opacity(30%);
-    margin-top: -25px;
-    font-size: 12px;
-}
-.btn4{
-    position: absolute;
-    z-index: 3;
-    border-radius: -20%;
-    margin-left: 590px;
-    height: 40px;
-    width: 75px;
-    filter: opacity(30%);
-    margin-top: -25px;
-    font-size: 12px;
-}
-
-
-.btn1:hover{
-    background-color: red;
-   
-}
-.btn2:hover{
-    background-color: red;
-}
-.btn3:hover{
-    background-color: red;
-}.btn4:hover{
-    background-color: red;
-}
-#title{
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    z-index: 3;
-    font: bold;
-    margin-top: -50px;
-    font-size: 45px;
-    color: red;
-}
-#title2{
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    z-index: 3;
-    font: bold;
-    margin-top: -50px;
-    margin-left: 135px;
-    font-size: 45px;
-    color: whitesmoke;
-}
-
-#subtitle{
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    z-index: 3;
-    font: bold;
-    margin-top: 120px;
-    margin-left: 355px;
-    font-size: 40px;
-    color: whitesmoke;
-}
-
-#subtitle1{
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    z-index: 3;
-    font: bold;
-    margin-top: 120px;
-    margin-left: 515px;
-    font-size: 40px;
-    color: red;
-}
-
-#subtitle2{
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    z-index: 3;
-    font: bold;
-    margin-top: 120px;
-    margin-left: 575px;
-    font-size: 40px;
-    color: whitesmoke;
-}
-
-#subtitle3{
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    z-index: 3;
-    font: bold;
-    margin-top: 120px;
-    margin-left: 675px;
-    font-size: 40px;
-    color: red;
-}
-
-#subtitle4{
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    z-index: 3;
-    font: bold;
-    margin-top: 120px;
-    margin-left: 735px;
-    font-size: 40px;
-    color: whitesmoke;
-}
-
-#home{
-    position: absolute;
-    z-index: 3;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 295px;
-    margin-top: -12px;
-    font-size: 12px;
-    color: red;
-
-}
-
-#home:hover{
-    color: whitesmoke
-}
-
-
-/* Cards */
-.card {
-    padding: 10px;
-    align-items: center;
-    border: 0;
-}
-
-.card img {
-    width: 100%
-}
-
-.card h4{
+    
+ .card h4{
     font-size: 13px;
     text-align: center;
     padding-top: 10px;
 }
-
 .card-container {
     width: 100%;
 }
