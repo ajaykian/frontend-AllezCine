@@ -132,7 +132,7 @@ margin-top: 5px;
 border-radius: -20%;
 height: 40px;
 width: 75px;
-filter: opacity(30%);
+filter: opacity(60%);
 font-size: 12px;
 }
 .btn2:hover{
@@ -219,8 +219,17 @@ display: inline;
 }
 .form-control{
 width: 50%;
-background-color: red;
-
+background-color: black;
+position: relative;
+display: block;
+}
+#exampleFormControlTextarea1{
+    width: 49.5%;
+    height: 100px;
+}
+.ctrl{
+    margin: 0px;
+    display: inline-block;
 }
 
 
