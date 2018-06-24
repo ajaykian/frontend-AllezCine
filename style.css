@@ -217,5 +217,11 @@ position: relative;
 z-index: 3;
 display: inline;
 }
+.form-control{
+width: 50%;
+background-color: red;
+
+}
+
 
 
