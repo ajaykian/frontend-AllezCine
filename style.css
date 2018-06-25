@@ -370,3 +370,25 @@ div {
     z-index: 100;
     transition: opacity .5s;
 }
+
+.footer {
+    padding: 50px 0 20px 0;
+    background-color: #090c14;
+    color: #878c94;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+.title{
+    font-size: 12px;
+}
