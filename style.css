@@ -96,6 +96,9 @@ max-height: 0%;
 height: auto;
 background-color: red;
 }
+
+/* -- CAROUSEL -- */
+
 #carouselExampleIndicators{
 position: relative;
 max-width: 100%;
@@ -103,9 +106,15 @@ max-height: auto;
 z-index: 2;
 filter: brightness(0.5);
 }
+
+/* -- IMAGES CAROUSEL --*/
+
 .imgvh{
 width: 100%;
 }
+
+/* -- TITRE NAVBAR ET MENU DEROULANT-- */
+
 .title{
 position: relative;
 font-size: 50px;
@@ -114,74 +123,54 @@ margin-top: -10px;
 margin-left: 0.1em;
 float: left;
 }
+
 .redtitle{
 color: red;
 }
-#menu {
-position: absolute;
-top: 3%;
-margin-left: 1em;
-z-index: 3;
-width: 75%;
-float: right;
-margin-top: -1em;
-padding-top: 15px;
-}
-.btn2{
-position: relative;
-z-index: 3;
-margin-top: 5px;
-border-radius: -20%;
-height: 40px;
-width: 75px;
-filter: opacity(60%);
-font-size: 12px;
-}
-.btn2:hover{
-background-color: red;
-}
-.barebtn{
-margin-left: 315px;
-display: inline-block;
-background-color: black;
-color: white;
-font-size: 12px;
-}
-.barebtn2{
-background-color: black;
-color: white;
-font-size: 12px;
-}
-.watchbtn{
-position: relative;
-z-index: 3;
-margin-left: 47%;
-background: black;
-color: white;
-font-size: 12px;
-}
+
 .navbar-light .navbar-nav .nav-link {
 color: white;
 margin:0 -0.03em;
 }
+
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active{
 color: white;
 font-size: 15px;
 }
+
 .navbar-light .navbar-brand{
 color: white;
 }
-.form-control{
-margin-left: 325px;
-filter: opacity(30%);
-}
+
 .navbar-toggler{
 position: relative;
 z-index: 3;
 }
+
 .navbar-toggler-icon{
 color: white;
+
 }
+
+#menu {
+    position: absolute;
+    top: 3%;
+    margin-left: 1em;
+    z-index: 3;
+    width: 75%;
+    float: right;
+    margin-top: -1em;
+    padding-top: 12px;
+    }
+
+/* -- BARRE DE RECHERCHE -- */
+
+.form-control{
+    margin-left: 325px;
+    filter: opacity(30%);
+    }
+/* -- LIGNE LATEST ONLINE MOVIE --*/
+
 .subtitle{
 position: relative;
 z-index: 3;
@@ -192,6 +181,7 @@ text-align: center;
 margin:0 15px;
 margin-left: -10px;
 }
+
 .redsubtitle{
 position: relative;
 z-index: 3;
@@ -201,38 +191,182 @@ font-size: 35px;
 text-align: center;
 margin:0 10px;
 }
-.btn2 .btn-secondary .active{
-position: relative;
-z-index: 3;
-margin-top: 15px;
-}
+
 .row1{
 margin-top: -270px;
 margin-left: 425px;
 height: 25px;
 }
+
 .d-flex{
 margin-top: 200px;
 }
-.ba{
-position: relative;
-z-index: 3;
-display: inline;
-}
+
+/* -- BOUTONS -- */
+
+.btn2{
+    position: relative;
+    z-index: 3;
+    margin-top: 5px;
+    border-radius: -20%;
+    height: 40px;
+    width: 75px;
+    filter: opacity(60%);
+    font-size: 12px;
+    }
+
+    .btn2 .btn-secondary .active{
+        position: relative;
+        z-index: 3;
+        margin-top: 15px;
+        }
+
+    .btn2:hover{
+    background-color: red;
+    }
+
+    .barebtn{
+    
+    display: inline;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    filter: opacity(60%);
+    border: none;
+    
+    }
+
+    .barebtn:hover{
+        background-color: red;
+    
+    }
+
+    .barebtn2{
+    
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    filter: opacity(60%);
+    border: none;
+    }
+    .barebtn2:hover{
+        background-color: red;
+    }
+
+    .watchbtn{
+    position: relative;
+    z-index: 3;
+    margin-left: 47%;
+    background: black;
+    color: white;
+    font-size: 12px;
+    filter: opacity(40%); 
+    border: none;
+    }
+
+    .watchbtn:hover{
+        background-color:red;
+    }
+
+    .btn-submit{
+      
+
+        }
+
+    /* -- FORMULAIRE -- */
+
 .form-control{
-width: 50%;
-background-color: black;
+
 position: relative;
 display: block;
+margin: auto;
 }
+
 #exampleFormControlTextarea1{
-    width: 49.5%;
+    
     height: 100px;
+    margin: auto;
+   
 }
+
 .ctrl{
-    margin: 0px;
-    display: inline-block;
+    margin: auto;
+    display: inline-block;  
+     
 }
 
 
 
+element.style {
+}
+#boxFacebook:hover, #boxTwitter:hover, #boxDribbble:hover, #boxGoogle:hover {
+    left: 0;
+}
+#boxGoogle {
+    top: 575px;
+    background-color: #da4c34;
+}
+#boxDribbble {
+    top: 540px;
+    background-color: #ef478a;
+}
+#boxFacebook {
+    top: 505px;
+    background-color: #405f93;
+}
+#boxTwitter {
+    top: 470px;
+    background-color: #3eabf7;
+}
+#boxFacebook, #boxTwitter, #boxDribbble, #boxGoogle {
+    position: fixed;
+    left: -90px;
+    width: 120px;
+    padding: 7px;
+    z-index: 20;
+    border-radius: 0 50px 50px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white;
+    font-size: 0.8em;
+}
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.button_return {
+    border-radius: 50%;
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    z-index: 100;
+    transition: opacity .5s;
+}
