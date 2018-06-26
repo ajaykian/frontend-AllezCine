@@ -1,3 +1,17 @@
+function okCookie() {
+    document.getElementById('cookieID').style.display = "none";
+    }
+
+function genderChoice(className) {
+    var $feature_movies = $('.featured-movies')
+    if(className == 'all'){
+        $feature_movies.find('.card').show();
+    } else {
+        $feature_movies.find('.card').hide();
+        $feature_movies.find(className).show();
+    }
+}
+
 function showFilms() {
     var moreFilms = document.getElementById("show-films-div");
     togglePosters(moreFilms);
@@ -31,11 +45,7 @@ function toggleButtonText(button) {
         button.innerHTML = "More films";
     }
 }
-/*
-$("#carouselExampleIndicators").click(function(){  
-    $('html, body').animate({  
-        scrollTop:$(jumbotron).offset().top  
-    }, 'slow');  
-    return false;  
-});  
-*/
+ 
+
+
+
