@@ -129,7 +129,7 @@
         <div class="container">
             <div class="row">
                 <div class="card col-6 col-md-4 col-lg-2 offset-lg-1">
-                    <img src="assets/oceanseleven-2001-action.jpg" alt="affiche du film Ocean's Eleven" position=absolute;>
+                    <img src="assets/oceanseleven-2001-action.jpg" alt="affiche du film Ocean's Eleven">
                     <div class="card-container">
                         <h4 class="card-title"><b>Ocean's Eleven</b></h4>
                         <div class="date float-left">2001</div>
@@ -188,30 +188,29 @@
         <div class="alignment">
             <div class="col-10 offset-lg-1 mr-lg-auto">
                 <div class="row">
-                    <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-danger all">All</button>
-                        <button type="button" class="btn btn-light">Action</button>
-                        <button type="button" class="btn btn-light">Science fiction</button>
-                        <button type="button" class="btn btn-light">Comedy</button>
-                        <button type="button" class="btn btn-light">Cartoon</button>
+                    <div id="myBtnContainer"class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-danger all" onclick="genderChoice('all')" >All</button>
+                        <button type="button" class="btn btn-light" onclick="genderChoice('.action')">Action</button>
+                        <button type="button" class="btn btn-light" onclick="genderChoice('.scifi')">Science fiction</button>
+                        <button type="button" class="btn btn-light" onclick="genderChoice('.comedy')">Comedy</button>
+                        <button type="button" class="btn btn-light" onclick="genderChoice('.cartoon')">Cartoon</button>
                     </div>
                 </div>
             </div>
         </div>
         
-        
         <div class="container">
             <div class="row">
-                <div class="card col-6 col-md-4 col-lg-2 offset-lg-1">
+                <div class="card gdr scifi col-6 col-md-4 col-lg-2">
                     <img src="assets/Looper-2012-scifi.jpg" alt="affiche du film Looper">
                     <div class="card-container">
                         <h4 class="card-title"><b>Looper</b></h4>
                         <div class="date float-left">2012</div>
-                        <div class="genre float-right">Science fiction</div>
+                        <div class="genre float-right">Science Fiction</div>
                     </div>
                 </div>
-                
-                <div class="card col-6 col-md-4 col-lg-2">
+
+                <div class="card gdr comedy col-6 col-md-4 col-lg-2">
                     <img src="assets/oss117-2006-comedie.jpg" alt="affiche du film OSS 117">
                     <div class="card-container">
                         <h4 class="card-title"><b>OSS 117</b></h4>
@@ -220,7 +219,7 @@
                     </div>
                 </div>
                 
-                <div class="card col-6 col-md-4 col-lg-2">
+                <div class="card gdr scifi col-6 col-md-4 col-lg-2">
                     <img src="assets/jurassic-world-dinosaur.jpg" alt="affiche du film Jurassic World">
                     <div class="card-container">
                         <h4 class="card-title"><b>Jurassic World</b></h4>
@@ -229,7 +228,7 @@
                     </div>
                 </div>
                 
-                <div class="card col-6 col-md-4 col-lg-2">
+                <div class="card gdr action col-6 col-md-4 col-lg-2">
                     <img src="assets/gladiator-2000-action.jpg" alt="affiche du film Gladiator">
                     <div class="card-container">
                         <h4 class="card-title"><b>Gladiator</b></h4>
@@ -237,8 +236,8 @@
                         <div class="genre float-right">Action</div>
                     </div>
                 </div>
-                
-                <div class="card col-6 col-md-4 col-lg-2 mr-lg-auto">
+
+                <div class="card gdr cartoon col-6 col-md-4 col-lg-2">
                     <img src="assets/sausageparty-2016-anime.jpg" alt="affiche du film Sausage Party">
                     <div class="card-container">
                         <h4 class="card-title"><b>Sausage Party</b></h4>
@@ -246,8 +245,8 @@
                         <div class="genre float-right">Cartoon</div>
                     </div>
                 </div> 
-                
-                <div class="card col-6 col-md-4 col-lg-2 offset-lg-1">
+     
+                <div class="card gdr scifi col-6 col-md-4 col-lg-2">
                     <img src="assets/matrix-1999-scifi.jpg" alt="affiche du film Matrix">
                     <div class="card-container">
                         <h4 class="card-title"><b>Matrix</b></h4>
@@ -255,8 +254,8 @@
                         <div class="genre float-right">Science fiction</div>
                     </div>
                 </div>
-                
-                <div class="card col-6 col-md-4 col-lg-2">
+
+                <div class="card gdr comedy col-6 col-md-4 col-lg-2">
                     <img src="assets/grandevadrouille-1966-comedie.jpg" alt="affiche du film la Grande Vadrouille">
                     <div class="card-container">
                         <h4 class="card-title"><b>La Grande Vadrouille</b></h4>
@@ -264,8 +263,8 @@
                         <div class="genre float-right">Comedy</div>
                     </div>
                 </div>
-                
-                <div class="card col-6 col-md-4 col-lg-2">
+
+                <div class="card gdr action col-6 col-md-4 col-lg-2">
                     <img src="assets/piratescaraibes-2003-action.jpg" alt="affiche du film Pirates des Caraïbes">
                     <div class="card-container">
                         <h4 class="card-title"><b>Pirates des Caraïbes</b></h4>
@@ -273,8 +272,8 @@
                         <div class="genre float-right">Action</div>
                     </div>
                 </div>
-                
-                <div class="card col-6 col-md-4 col-lg-2">
+
+                <div class="card gdr cartoon col-6 col-md-4 col-lg-2">
                     <img src="assets/shrek2-2004-anime.jpg" alt="affiche du film Shrek 2">
                     <div class="card-container">
                         <h4 class="card-title"><b>Shrek 2</b></h4>
@@ -283,7 +282,7 @@
                     </div>
                 </div>
                 
-                <div class="card col-6 col-md-4 col-lg-2 mr-lg-auto">
+                <div class="card gdr scifi col-6 col-md-4 col-lg-2">
                     <img src="assets/timeout-2011-scifi.jpg" alt="affiche du film Time Out">
                     <div class="card-container">
                         <h4 class="card-title"><b>Time Out</b></h4>
@@ -296,7 +295,7 @@
             <div id="show-films-div" style="display:none">
                 <div class="container">
                     <div class="row">
-                        <div class="card col-6 col-md-4 col-lg-2 offset-lg-1">
+                        <div class="card gdr cartoon col-6 col-md-4 col-lg-2 offset-lg-1">
                             <img src="assets/Zootopie-2016-anime.jpg" alt="affiche du film Zootopie">
                             <div class="card-container">
                                 <h4 class="card-title"><b>Zootopie</b></h4>
@@ -304,7 +303,8 @@
                                 <div class="genre float-right">Cartoon</div>
                             </div>
                         </div>
-                        <div class="card col-6 col-md-4 col-lg-2">
+
+                        <div class="card gdr action col-6 col-md-4 col-lg-2">
                             <img src="assets/gijoe-2009-action.jpg" alt="affiche du film GI Joe">
                             <div class="card-container">
                                 <h4 class="card-title"><b>GI Joe</b></h4>
@@ -313,7 +313,7 @@
                             </div>
                         </div>
 
-                        <div class="card col-6 col-md-4 col-lg-2">
+                        <div class="card gdr scifi col-6 col-md-4 col-lg-2">
                             <img src="assets/interstellar-2014-scifi.jpg" alt="affiche du film Interstellar">
                             <div class="card-container">
                                 <h4 class="card-title"><b>Interstellar</b></h4>
@@ -322,7 +322,7 @@
                             </div>
                         </div>
 
-                        <div class="card col-6 col-md-4 col-lg-2">
+                        <div class="card gdr comedy col-6 col-md-4 col-lg-2">
                             <img src="assets/bienvenuechtis-2008-comedie.jpg" alt="affiche du film Bienvenue chez les Ch'tis">
                             <div class="card-container">
                                 <h4 class="card-title"><b>Bienvenue chez les Ch'tis</b></h4>
@@ -330,13 +330,13 @@
                                 <div class="genre float-right">Comedy</div>
                             </div>
                         </div>
-                        
-                        <div class="card col-6 col-md-4 col-lg-2 mr-lg-auto">
+
+                        <div class="card gdr cartoon col-6 col-md-4 col-lg-2 mr-lg-auto">
                             <img src="assets/iceage-2009-anime.jpg" alt="affiche du film Ice Age">
                             <div class="card-container">
                                 <h4 class="card-title"><b>Ice Age</b></h4>
                                 <div class="date float-left">2009</div>
-                                <div class="genre float-right">Ice Age</div>
+                                <div class="genre float-right">Cartoon</div>
                             </div>
                         </div>
                     </div>
@@ -570,10 +570,10 @@
 
     </footer>
 
-    <script src="javascript/application.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="javascript/application.js"></script>
 
     </body>
 </html>

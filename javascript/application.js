@@ -1,3 +1,13 @@
+function genderChoice(className) {
+    var $feature_movies = $('.featured-movies')
+    if(className == 'all'){
+        $feature_movies.find('.card').show();
+    } else {
+        $feature_movies.find('.card').hide();
+        $feature_movies.find(className).show();
+    }
+}
+
 function showFilms() {
     var moreFilms = document.getElementById("show-films-div");
     togglePosters(moreFilms);
