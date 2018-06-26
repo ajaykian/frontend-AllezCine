@@ -1,3 +1,7 @@
+function okCookie() {
+    document.getElementById('cookieID').style.display = "none";
+    }
+
 function genderChoice(className) {
     var $feature_movies = $('.featured-movies')
     if(className == 'all'){
@@ -41,13 +45,7 @@ function toggleButtonText(button) {
         button.innerHTML = "More films";
     }
 }
-
-$(#carouselExampleIndicators).click(function(){  
-    $('html, body').animate({  
-        scrollTop:$(jumbotron).offset().top  
-    }, 'slow');  
-    return false;  
-});  
+ 
 
 
 
