@@ -31,10 +31,11 @@ function toggleButtonText(button) {
         button.innerHTML = "More films";
     }
 }
-
-$(#carouselExampleIndicators).click(function(){  
+/*
+$("#carouselExampleIndicators").click(function(){  
     $('html, body').animate({  
         scrollTop:$(jumbotron).offset().top  
     }, 'slow');  
     return false;  
 });  
+*/
