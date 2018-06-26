@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">-->
 
 
 <body>
@@ -94,7 +95,7 @@
                              
                              <div class="dropdown">
                                      <button class="btn2 btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                     Series
+                                     Shop
                                      </button>
                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2" alt="Responsive">
                                      <button class="dropdown-item" type="button">Action</button>
@@ -104,7 +105,7 @@
                      </li>            
               </ul>
                <form class="form-inline my-2 my-lg-0">
-                 <input class="form-control mr-sm-2"  type="search" placeholder="Search">
+                 <input class="form-control mr-xs-2"  type="search" placeholder="Search">
                  
                </form>
 
@@ -114,14 +115,17 @@
      </div>
 
      <dl class="row row1">    
-        <dt class="col-sm-12"><p class="subtitle">LATEST<span class="redsubtitle">ON</span><span class="subtitle">LINE</span><span class="redsubtitle">MO</span><span class="subtitle">VIES</span></p></dt>
+        <dt class="col-xs-12"><p class="subtitle">LATEST<span class="redsubtitle">ON</span><span class="subtitle">LINE</span><span class="redsubtitle">MO</span><span class="subtitle">VIES</span></p></dt>
     </dl>
+
     <button class="watchbtn">WATCH</button> 
-    <div class="d-flex flex-row">
-    <div class="p-2"><button class="barebtn">LOGIN</button></div>
-    <div class="p-2"><button class="barebtn2">REGISTER</button></div>
-                
-              </div>
+    <div class="d-flex flex-row row">
+        <div class="col-12">
+            <div class="col-1 offset-4"><button class="barebtn">LOGIN</button></div>
+            <div class="offset-4 col-1 mr-6"><button class="barebtn2">REGISTER</button></div>
+        </div>    
+    </div>           
+
  </header>
 
     
@@ -535,46 +539,138 @@
         <div class="row">
             <div class="col-12 section-title">
                 <div class="vl float-left"></div>
-                <h2 class="float-left">CONTACT US</h2>
-            </div>
-        </div>
-        <form>
-            <div class="form-row">
-                <div class="col-3">
-                    <input type="text" class="form-control" placeholder="First name">
-                </div>
-                <div class="col-3">
-                    <input type="text" class="form-control" placeholder="Last name">
+                    <h2 class="float-left">CONTACT US</h2>
                 </div>
             </div>
-        </form>
-        <form>
-            <div class="form-row">
-                <div class="col-3">
-                 <input type="text" class="form-control" placeholder="First name">
+            <div class="col-6 offset-3 mr-auto">
+                <form>
+                    <div class="form-row">
+                        <div class="col-6">
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control ctrl" placeholder="Last name">
+                        </div>
+                    </div>
+                </form>
+            
+                <form>
+                    <div class="form-row">
+                        <div class="col-6">
+                            <input type="text" class="form-control" placeholder="E-mail">
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control ctrl"  placeholder="Subject">
+                        </div>
+                    </div>
+                </form>
+                <div class="form-group form-row">
+                    <div class="col-12">
+                        <label for="exampleFormControlTextarea1"></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>    
                 </div>
-                <div class="col-3">
-                 <input type="text" class="form-control" placeholder="Last name">
-                </div>
-            </div>
-        </form>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1"></label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <button type="button" class="btn btn-danger btn-submit">SUBMIT</button>
+            </div>        
         </div>
     </section>
+    <!-- SOCIAL NETWORK EXPANDABLE ICON -->
+    <div id="boxTwitter">
+        Twitter  <i class="fa fa-twitter"></i>
+    </div>
+    <div id="boxFacebook">
+        Facebook  <i class="fa fa-facebook"></i>
+    </div>
+    <div id="boxDribbble">
+        Dribbble  <i class="fa fa-dribbble"></i>
+    </div>
+    <div id="boxGoogle">
+        Google +  <i class="fa fa-google-plus"></i>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="subscribeform">
+                <div class="raw">
+                    <div class="col-12">
+                        <h4 class="offset-5 subscribe">SUBSCRIBE TO US</h4>
+                        <div class="offset-3 input-group mb-3 subscribebar">
+                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-danger" type="button">Button</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+        <div class="container">
+             <div class="row">
+                <div class="col-sm-2">
+                    
+                    <ul>
+                        <li>Feature</li>
+                        <br>
+                        <li>2016</li>
+                        <li>2015</li>
+                        <li>2014</li>
+                        <li>2013</li>
+                        <li>2012</li>
+                        <li>2011</li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <ul>
+                        <li>Movie</li>
+                        <br>
+                        <li>Adventure</li>
+                        <li>Comedy</li>
+                        <li>Fantasy</li>
+                        <li>Action</li>
+                        <li>Movie</li>
+                        <li>Horror</li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul>Review movies</ul>
+                    <section class="row">
+                        <div class="col-3 tab1">Comedy</div>
+                        <div class="col-2 tab1">Horror</div>
+                        <div class="col-3 tab1">Historic</div>
+                        <div class="col-3 tab1">Romantic</div>
+                    </section>
+                </div>
+            </div> 
+        </div>   
+            
+            <!--<div class="row">
+            
+                    <h1 class="title">Connect us</h1>
+                    <ul class="social-icon">
+                        <a href="#" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" class="social"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        <a href="#" class="social"><i class="fa fa-google" aria-hidden="true"></i></a>
+                        <a href="#" class="social"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                    </ul>
+            </div>-->
+            <div class="row">
+                <div class="col-12">
+                    <div class="copyright row text-center offset-5 col-3">Copyright © AjayCiné 2018</div>
+                </div>
+            </div>
+            
+        </div>	
+    </footer> 
+    <button class="button_return displayButtonAnimation"><i class="fa fa-arrow-up"><a></a></i></button> 
+        
     
-
-    
-    <footer>
-
-    </footer>
-
+    <script src="https://use.fontawesome.com/be3ae42918.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="javascript/application.js"></script>
-
     </body>
 </html>
     
