@@ -128,8 +128,10 @@
     <button class="watchbtn">WATCH</button> 
     <div class="d-flex flex-row row">
         <div class="col-12">
-            <div class="col-1 offset-4"><button class="barebtn">LOGIN</button></div>
-            <div class="offset-4 col-1 mr-6"><button class="barebtn2">REGISTER</button></div>
+            <div class="col-9 offset-3">
+                <button class="barebtn" data-toggle="modal" data-target="#loginModal">LOGIN</button>
+                <button class="barebtn">REGISTER</button>
+            </div>
         </div>    
     </div>           
 
@@ -139,7 +141,7 @@
     <section class="films">
         <div class="container">
             <div class="row">
-                <div class="card col-6 col-md-4 col-lg-2 offset-lg-1">
+                <div class="card col-6 col-md-4 col-lg-2 offset-lg-1"  data-toggle="modal" data-target="#oceanElevenTrailerModal">
                     <img src="assets/oceanseleven-2001-action.jpg" alt="affiche du film Ocean's Eleven">
                     <div class="card-container">
                         <h4 class="card-title"><b>Ocean's Eleven</b></h4>
@@ -707,6 +709,60 @@
             
         </div>	
     </footer> 
+
+    <div class="modal modal-adult" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h5 class="modal-title">Are you more than 18?</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">Yes</button>
+                    <a href="https://www.imdb.com/" class="btn btn-light">No</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-trailer" id="oceanElevenTrailerModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe width="100%" height="350" src="https://www.youtube.com/embed/imm6OR605UI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Email</label>
+                            <input type="email" class="form-control" required="true" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Password</label>
+                            <input type="password" class="form-control" required="true" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-danger">OK</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <button class="button_return displayButtonAnimation"><i class="fa fa-arrow-up"><a></a></i></button> 
         
     
