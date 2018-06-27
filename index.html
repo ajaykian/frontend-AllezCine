@@ -10,7 +10,7 @@
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+<link rel=preload href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
 <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">-->
 
 
@@ -127,8 +127,10 @@
     <button class="watchbtn"><a href="https://youtu.be/O-RgquKVTPE">WATCH</a></button> 
     <div class="d-flex flex-row row">
         <div class="col-12">
-            <div class="col-1 offset-4"><button class="barebtn">LOGIN</button></div>
-            <div class="offset-4 col-1 mr-6"><button class="barebtn2">REGISTER</button></div>
+            <div class="col-9 offset-3">
+                <button class="barebtn" data-toggle="modal" data-target="#loginModal">LOGIN</button>
+                <button class="barebtn">REGISTER</button>
+            </div>
         </div>    
     </div>           
 
@@ -138,7 +140,7 @@
     <section class="films">
         <div class="container">
             <div class="row">
-                <div class="card col-6 col-md-4 col-lg-2 offset-lg-1">
+                <div class="card col-6 col-md-4 col-lg-2 offset-lg-1"  data-toggle="modal" data-target="#oceanElevenTrailerModal">
                     <img src="assets/oceanseleven-2001-action.jpg" alt="affiche du film Ocean's Eleven">
                     <div class="card-container">
                         <h4 class="card-title"><b>Ocean's Eleven</b></h4>
@@ -147,7 +149,7 @@
                     </div>
                 </div>
 
-                <div class="card col-6 col-md-4 col-lg-2">
+                <div class="card col-6 col-md-4 col-lg-2" data-toggle="modal" data-target="#dinerconsTrailerModal">
                     <img src="assets/dinercons-1998-comedie.jpg" alt="affiche du film Diner de cons">
                     <div class="card-container">
                         <h4 class="card-title"><b>Diner de cons</b></h4>
@@ -156,7 +158,7 @@
                     </div>
                 </div>
 
-                <div class="card col-6 col-md-4 col-lg-2">
+                <div class="card col-6 col-md-4 col-lg-2" data-toggle="modal" data-target="#lahautTrailerModal">
                     <img src="assets/lahaut-2009-anime.jpg" alt="affiche du film Là-haut">
                     <div class="card-container">
                         <h4 class="card-title"><b>Là-haut</b></h4>
@@ -165,7 +167,7 @@
                     </div>
                 </div>
                 
-                <div class="card col-6 col-md-4 col-lg-2">
+                <div class="card col-6 col-md-4 col-lg-2" data-toggle="modal" data-target="#divergenteTrailerModal">
                     <img src="assets/divergente-2014-scifi.jpg" alt="affiche du film Divergente">
                     <div class="card-container">
                         <h4 class="card-title"><b>Divergente</b></h4>
@@ -174,7 +176,7 @@
                     </div>
                 </div>
 
-                <div class="card col-6 col-md-4 col-lg-2 mr-lg-auto">
+                <div class="card col-6 col-md-4 col-lg-2 mr-lg-auto" data-toggle="modal" data-target="#terranovaTrailerModal">
                     <img src="assets/serie-terranova-2011-scifi.jpg" alt="affiche de la série Terra Nova">
                     <div class="card-container">
                         <h4 class="card-title"><b>Terra Nova</b></h4>
@@ -185,7 +187,6 @@
             </div>
         </div>
     </section>
-    
     
     <section class="featured-movies">
         <div class="row">
@@ -300,12 +301,30 @@
                         <div class="genre float-right">Science fiction</div>
                     </div>
                 </div>
+
+                <div class="card gdr cartoon col-6 col-md-4 col-lg-2">
+                    <img src="assets/kungfupanda-2008-anime.jpg" alt="affiche du film Kung Fu Panda">
+                    <div class="card-container">
+                        <h4 class="card-title"><b>Kung Fu Panda</b></h4>
+                        <div class="date float-left">2008</div>
+                        <div class="genre float-right">Cartoon</div>
+                    </div>
+                </div>
+
+                <div class="card gdr action col-6 col-md-4 col-lg-2">
+                    <img src="assets/sansidentite-2009-action.jpg" alt="affiche du film Sans Identité">
+                    <div class="card-container">
+                        <h4 class="card-title"><b>Sans Identité</b></h4>
+                        <div class="date float-left">2009</div>
+                        <div class="genre float-right">Action</div>
+                    </div>
+                </div>
             </div>
 
             <div id="show-films-div" style="display:none">
                 <div class="container">
                     <div class="row">
-                        <div class="card gdr cartoon col-6 col-md-4 col-lg-2 offset-lg-1">
+                        <div class="card gdr cartoon col-6 col-md-4 col-lg-2">
                             <img src="assets/Zootopie-2016-anime.jpg" alt="affiche du film Zootopie">
                             <div class="card-container">
                                 <h4 class="card-title"><b>Zootopie</b></h4>
@@ -341,12 +360,21 @@
                             </div>
                         </div>
 
-                        <div class="card gdr cartoon col-6 col-md-4 col-lg-2 mr-lg-auto">
+                        <div class="card gdr cartoon col-6 col-md-4 col-lg-2">
                             <img src="assets/iceage-2009-anime.jpg" alt="affiche du film Ice Age">
                             <div class="card-container">
                                 <h4 class="card-title"><b>Ice Age</b></h4>
                                 <div class="date float-left">2009</div>
                                 <div class="genre float-right">Cartoon</div>
+                            </div>
+                        </div>
+
+                        <div class="card gdr comedy col-6 col-md-4 col-lg-2">
+                            <img src="assets/taistoi-2003-comedie.jpg" alt="affiche du film Tais-toi">
+                            <div class="card-container">
+                                <h4 class="card-title"><b>Tais-toi</b></h4>
+                                <div class="date float-left">2003</div>
+                                <div class="genre float-right">Comedy</div>
                             </div>
                         </div>
                     </div>
@@ -383,7 +411,7 @@
             
         <div class="container">
             <div class="row">
-                <div class="card col-6 col-md-4 col-lg-2 offset-lg-1">
+                <div class="card col-6 col-md-4 col-lg-2">
                     <img src="assets/serie-blackmirror-2011-scifi.jpg" alt="affiche de la série Black Mirror">
                     <div class="card-container">
                         <h4 class="card-title"><b>Black Mirror</b></h4>
@@ -419,7 +447,7 @@
                     </div>
                 </div>
                 
-                <div class="card col-6 col-md-4 col-lg-2 mr-lg-auto">
+                <div class="card col-6 col-md-4 col-lg-2">
                     <img src="assets/serie-friends-1994-comedie.jpg" alt="affiche de la série Friends">
                     <div class="card-container">
                         <h4 class="card-title"><b>Friends</b></h4>
@@ -428,7 +456,7 @@
                     </div>
                 </div> 
                 
-                <div class="card col-6 col-md-4 col-lg-2 offset-lg-1">
+                <div class="card col-6 col-md-4 col-lg-2">
                     <img src="assets/serie-fringe-2008-scifi.jpg" alt="affiche de la série Fringe">
                     <div class="card-container">
                         <h4 class="card-title"><b>Fringe</b></h4>
@@ -464,7 +492,7 @@
                     </div>
                 </div>
                 
-                <div class="card col-6 col-md-4 col-lg-2 mr-lg-auto">
+                <div class="card col-6 col-md-4 col-lg-2">
                     <img src="assets/serie-phineasetferb-2007-anime.jpg" alt="affiche de la série Phinéas et Ferb">
                     <div class="card-container">
                         <h4 class="card-title"><b>Phinéas et Ferb</b></h4>
@@ -472,13 +500,32 @@
                         <div class="genre float-right">Cartoon</div>
                     </div>
                 </div>
+
+                <div class="card col-6 col-md-4 col-lg-2">
+                    <img src="assets/serie-outlander-2014-scifi.jpg" alt="affiche de la série Outtlander">
+                    <div class="card-container">
+                        <h4 class="card-title"><b>Outlander</b></h4>
+                        <div class="date float-left">2014</div>
+                        <div class="genre float-right">Science fiction</div>
+                    </div>
+                </div>
+
+                <div class="card col-6 col-md-4 col-lg-2">
+                    <img src="assets/serie-psych-2006-comedie.jpg" alt="affiche de la série Psych">
+                    <div class="card-container">
+                        <h4 class="card-title"><b>Psych</b></h4>
+                        <div class="date float-left">2006</div>
+                        <div class="genre float-right">Comedy</div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
         <div id="show-series-div" style="display:none">
             <div class="container">
                 <div class="row">
-                    <div class="card col-6 col-md-4 col-lg-2 offset-lg-1">
+                    <div class="card col-6 col-md-4 col-lg-2">
                         <img src="assets/serie-pokemon-1997-anime.jpg" alt="affiche de la série Pokémon">
                         <div class="card-container">
                             <h4 class="card-title"><b>Pokémon</b></h4>
@@ -506,6 +553,24 @@
                     </div>
                     
                     <div class="card col-6 col-md-4 col-lg-2">
+                        <img src="assets/serie-xfiles-1993-scifi.jpg" alt="affiche de la série X Files">
+                        <div class="card-container">
+                            <h4 class="card-title"><b>X Files</b></h4>
+                            <div class="date float-left">1993</div>
+                            <div class="genre float-right">Science fiction</div>
+                        </div>
+                    </div>
+
+                    <div class="card col-6 col-md-4 col-lg-2">
+                        <img src="assets/serie-terranova-2011-scifi.jpg" alt="affiche de la série Terra Nova">
+                        <div class="card-container">
+                            <h4 class="card-title"><b>Terra Nova</b></h4>
+                            <div class="date float-left">2011</div>
+                            <div class="genre float-right">Science fiction</div>
+                        </div>
+                    </div>
+
+                    <div class="card col-6 col-md-4 col-lg-2">
                         <img src="assets/serie-howimet-2005-comedie.jpg" alt="affiche de la série How I met your Mother">
                         <div class="card-container">
                             <h4 class="card-title"><b>How I Met Your Mother</b></h4>
@@ -513,15 +578,6 @@
                             <div class="genre float-right">Comedy</div>
                         </div>
                     </div>
-                    
-                    <div class="card col-6 col-md-4 col-lg-2 mr-lg-auto">
-                        <img src="assets/serie-xfiles-1993-scifi.jpg" alt="affiche de la série X Files">
-                        <div class="card-container">
-                            <h4 class="card-title"><b>X Files</b></h4>
-                            <div class="date float-left">1993</div>
-                            <div class="genre float-right">Science fiction</div>
-                        </div>
-                    </div> 
                 </div>
             </div>
         </div>
@@ -719,6 +775,96 @@
             
         </div>	
     </footer> 
+
+    <div class="modal modal-adult" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h5 class="modal-title">Are you more than 18?</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">Yes</button>
+                    <a href="https://www.imdb.com/" class="btn btn-light">No</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-trailer" id="oceanElevenTrailerModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe width="100%" height="350" src="https://www.youtube.com/embed/imm6OR605UI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-trailer" id="dinerconsTrailerModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe width="100%" height="350" src="https://www.youtube.com/embed/LECeBFUOaGM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-trailer" id="lahautTrailerModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe width="100%" height="350" src="https://www.youtube.com/embed/pkqzFUhGPJg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-trailer" id="divergenteTrailerModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe width="100%" height="350" src="https://www.youtube.com/embed/sutgWjz10sM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-trailer" id="terranovaTrailerModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe width="100%" height="350" src="https://www.youtube.com/embed/4Oux-2iZfNc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Email</label>
+                            <input type="email" class="form-control" required="true" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Password</label>
+                            <input type="password" class="form-control" required="true" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-danger">OK</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <button class="button_return displayButtonAnimation"><i class="fa fa-arrow-up"><a></a></i></button> 
         
     

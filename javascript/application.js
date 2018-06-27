@@ -12,6 +12,16 @@ function genderChoice(className) {
     }
 }
 
+$('.modal-adult').modal({
+    backdrop: 'static',
+    keyboard: false
+})
+
+$('.modal-trailer').on('hidden.bs.modal', function () {
+    var $iframe = $(this).find('iframe');
+    $iframe.attr("src", $iframe.attr("src"));
+})
+
 function showFilms() {
     var moreFilms = document.getElementById("show-films-div");
     togglePosters(moreFilms);
