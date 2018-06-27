@@ -395,8 +395,8 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     color: white;
     background-color: red;
     z-index: 5;
@@ -471,9 +471,7 @@ font-size: 20px;
 }
 
 .map{
-    position: relative;
-    margin-left: 400px;
- 
+    margin-left: 25%;
 }
 
 #contactSub{
