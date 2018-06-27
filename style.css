@@ -346,19 +346,19 @@ element.style {
     left: 0;
 }
 #boxGoogle {
-    top: 575px;
+    top: 180px;
     background-color: #da4c34;
 }
 #boxDribbble {
-    top: 540px;
+    top: 145px;
     background-color: #ef478a;
 }
 #boxFacebook {
-    top: 505px;
+    top: 110px;
     background-color: #405f93;
 }
 #boxTwitter {
-    top: 470px;
+    top: 75px;
     background-color: #3eabf7;
 }
 #boxFacebook, #boxTwitter, #boxDribbble, #boxGoogle {
@@ -421,6 +421,7 @@ div {
     background-color: #090c14;
     color: grey;
     padding-top: -10px;
+   
 }
 
 .copyright{
@@ -485,3 +486,15 @@ font-size: 20px;
     margin-left: 400px;
  
 }
+
+#contactSub{
+    border:none;
+    background-color: #DF2620;
+    padding: 8px;
+    margin-right: 10px;
+    color: white;
+    min-width: 80px;
+    margin-bottom: 10px;
+}
+
+

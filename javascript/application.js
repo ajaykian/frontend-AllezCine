@@ -45,7 +45,26 @@ function toggleButtonText(button) {
         button.innerHTML = "More films";
     }
 }
- 
+
+$('.modal-adult').modal({
+    backdrop: 'static',
+    keyboard: false
+}) 
+
+$('.modal-trailer').on('hidden.bs.modal', function () {
+    var $iframe = $(this).find('iframe');
+    $iframe.attr("src", $iframe.attr("src"));
+})
+
+$("btn-submit").click(function() {
+var firstName = document.getElementById("firstName").value;
+var lastName = document.getElementById("lastName").value;
+var email = document.getElementById("email").value;
+var subject = document.getElementById("subject").value;
+
+alert("First name : "+firstName+ "\nLast name : "+lastName + "\nEmail : " + email + "\nSubject : " + subject);
+
+});
 
 
 
