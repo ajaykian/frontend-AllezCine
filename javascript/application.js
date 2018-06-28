@@ -2,8 +2,47 @@ function okCookie() {
     document.getElementById('cookieID').style.display = "none";
 }
 
+var password = document.getElementById("password-register");
+var confirm_password = document.getElementById("confirm-password-register");
+
+// function validatePassword(){
+//   if(password.innerHTML != confirm_password.innerHTML) {
+//     confirm_password.setCustomValidity("Passwords Don't Match");
+//   } else {
+//     confirm_password.setCustomValidity('');
+//   }
+// }
+// password.onchange = validatePassword;
+// confirm_password.onkeyup = validatePassword;
+
+// $('#password, #confirm_password').on('keyup', function () {
+//     if ($('#password').val() == $('#confirm_password').val()) {
+//       $('#message').html('Matching').css('color', 'green');
+//     } else 
+//       $('#message').html('Not Matching').css('color', 'red');
+//   });
+
+function check(input) {
+    if (input.value != document.getElementById('password').value) {
+        input.setCustomValidity('Password Must be Matching.');
+    } else {
+        // input is valid -- reset the error message
+        input.setCustomValidity('');
+    }
+}
+
 function genderChoice(className) {
     var $feature_movies = $('.featured-movies')
+    if(className == 'all'){
+        $feature_movies.find('.card').show();
+    } else {
+        $feature_movies.find('.card').hide();
+        $feature_movies.find(className).show();
+    }
+}
+
+function genderChoiceSeries(className) {
+    var $feature_movies = $('.featured-series')
     if(className == 'all'){
         $feature_movies.find('.card').show();
     } else {
@@ -65,6 +104,16 @@ var subject = document.getElementById("subject").value;
 alert("First name : "+firstName+ "\nLast name : "+lastName + "\nEmail : " + email + "\nSubject : " + subject);
 
 });
+
+//pop up contact-form
+function contactformFunction() {
+    var test1 = 'First Name: ' + document.getElementById("firstname").value;
+    var test2 = 'Last Name: ' + document.getElementById("lastname").value;
+    var test3 = 'Email: ' + document.getElementById("email").value;
+    var test4 = 'Subject: ' + document.getElementById("subject").value;
+    var test5 = 'Message: ' + document.getElementById("message").value;
+    alert(test1 + '\n' + test2 + '\n' + test3 + '\n' + test4 + '\n' + test5);
+    }
 
 window.onscroll = function() {scrollFunction()};
 

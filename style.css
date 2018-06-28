@@ -76,13 +76,9 @@ section{
 }
 
 .card img {
-    width: 100%;
+    /* width: 100%; */
     height: 250px;
-}
-
-.card-img {
-    width: 100%;
-    height: 250px;
+    padding: 10px;
 }
 
 .card h4{
@@ -111,6 +107,18 @@ section{
 
 html {
 font-size: 1rem;
+}
+
+#forgot-password{
+    text-decoration: none;
+    color: rgb(216, 79, 79);
+    font-size: 0.8em;
+}
+
+#check-conditions{
+    text-decoration: none;
+    color: rgb(216, 79, 79);
+    font-size: 0.8em;
 }
 
 /* Extra small devices (xs) (portrait phones, less than 576px)*/
@@ -435,9 +443,17 @@ div {
     color: white;
     font-size: 9px;
     margin: 2px;
-    height: 25px;
+    height: 25px;   
     
-    
+}
+
+.img-carre-gris{
+    margin-bottom: 5px;
+}
+
+.latest-movies{
+    font-size: 0.8em;
+    padding-bottom: 10px;
 }
 
 .lign{
