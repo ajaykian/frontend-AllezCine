@@ -130,3 +130,10 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
+
+$("#imgshop1, #imgshop2, #imgshop3, #imgshop4, #imgshop5, #imgshop6, #imgshop7, #imgshop8").on("click", function(){
+    let name = $(this).attr("id");
+    let name2 = Number(name.slice(7));
+    let name3 = name2-1;
+    $('#multi-item-example').carousel(name3);
+   });
