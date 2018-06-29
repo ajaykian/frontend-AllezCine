@@ -121,25 +121,6 @@ font-size: 1rem;
     font-size: 0.8em;
 }
 
-/* Extra small devices (xs) (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) { 
-    
-}
-
-/* Small devices (sm) (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-
-}
-
-/* Medium devices (md) (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-
-}
-
-/* Large devices (lg) (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
-
-}
 
 .jumbotron{
 padding: 0px;
@@ -223,6 +204,36 @@ color: white;
     filter: opacity(30%);
     }
 /* -- LIGNE LATEST ONLINE MOVIE --*/
+@media(min-width:375px){
+    .redsubtitle{
+        position: sticky;
+        text-align: center;
+        margin-left: -190px;
+        font-size: 2px;
+       
+    }
+    .subtitle{
+        font-size: 2px;
+
+    }
+}
+@media(max-width:767px){}
+@media(min-width:768px){
+    .redsubtitle{
+        text-align: center;
+        margin-left: -190px;
+        font-size: 2px;
+        display: none;
+        margin:0 0px;
+    }
+    .subtitle{
+        display: none;
+        z-index: 0;
+
+    }
+}
+@media(min-width:992px){}
+@media(min-width:1200px){}
 
 .subtitle{
 position: relative;
@@ -486,4 +497,16 @@ font-size: 20px;
     color: white;
     min-width: 80px;
     margin-bottom: 10px;
+}
+
+.icon{
+    color: white;
+}
+
+.card-text{
+    color: lightgrey;
+}
+
+.card-title{
+    color: lightgray;
 }
