@@ -258,42 +258,43 @@ margin-top: 205px;
 /* -- BOUTONS -- */
 
 .btn2{
-    position: relative;
     z-index: 2;
     margin-top: 5px;
-    border-radius: -20%;
-    height: 40px;
-    width: 75px;
-    filter: opacity(60%);
+    filter: opacity(80%);
+    vertical-align: middle;
+    color: white;
+}
+
+.btn2 .btn-secondary .active{
+    position: relative;
+    z-index: 2;
+    margin-top: 15px;
+}
+
+.btn2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item .btn-secondary{
+    background-color: transparent;
+}
+
+.barebtn{
+    background-color: black;
+    color: white;
     font-size: 12px;
-    }
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px 2px;
+}
 
-    .btn2 .btn-secondary .active{
-        position: relative;
-        z-index: 2;
-        margin-top: 15px;
-        }
+.barebtn:hover{
+    background-color: #333;
+}
 
-    .btn2:hover{
-    background-color: red;
-    }
-
-    .barebtn{
-    
-        background-color: black;
-        color: white;
-        font-size: 12px;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        margin: 5px 2px;
-    }
-
-    .barebtn:hover{
-        background-color: #333;
-    }
-
-    .watchbtn{
+.watchbtn{
     position: relative;
     z-index: 2;
     margin-left: 47%;
@@ -302,18 +303,17 @@ margin-top: 205px;
     font-size: 12px;
     filter: opacity(40%); 
     border: none;
-    }
+}
 
-    .watchbtn:hover{
-        background-color:red;
-    }
+.watchbtn:hover{
+    background-color:red;
+}
 
-    .btn-submit{
+.btn-submit{
      margin-bottom: 10px; 
+}
 
-    }
-
-    /* -- FORMULAIRE -- */
+/* -- FORMULAIRE -- */
 
 .form-control{
 

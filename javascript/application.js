@@ -5,22 +5,22 @@ function okCookie() {
 var password = document.getElementById("password-register");
 var confirm_password = document.getElementById("confirm-password-register");
 
-// function validatePassword(){
-//   if(password.innerHTML != confirm_password.innerHTML) {
-//     confirm_password.setCustomValidity("Passwords Don't Match");
-//   } else {
-//     confirm_password.setCustomValidity('');
-//   }
-// }
-// password.onchange = validatePassword;
-// confirm_password.onkeyup = validatePassword;
+function validatePassword(){
+  if(password.innerHTML != confirm_password.innerHTML) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
 
-// $('#password, #confirm_password').on('keyup', function () {
-//     if ($('#password').val() == $('#confirm_password').val()) {
-//       $('#message').html('Matching').css('color', 'green');
-//     } else 
-//       $('#message').html('Not Matching').css('color', 'red');
-//   });
+$('#password, #confirm_password').on('keyup', function () {
+    if ($('#password').val() == $('#confirm_password').val()) {
+      $('#message').html('Matching').css('color', 'green');
+    } else 
+      $('#message').html('Not Matching').css('color', 'red');
+  });
 
 function check(input) {
     if (input.value != document.getElementById('password').value) {
