@@ -141,6 +141,10 @@ z-index: 1;
 filter: brightness(0.5);
 }
 
+.carousel-indicators{
+    margin-bottom: 85px;
+}
+
 /* -- IMAGES CAROUSEL --*/
 
 .imgvh{
@@ -202,6 +206,7 @@ color: white;
 .form-control{
     margin-left: 325px;
     filter: opacity(30%);
+    margin-top: -45px;
     }
 /* -- LIGNE LATEST ONLINE MOVIE --*/
 @media(min-width:375px){
@@ -259,7 +264,7 @@ margin:0 10px;
 .row1{
 margin-top: -270px;
 margin-left: 425px;
-height: 25px;
+height: 65px;
 }
 
 .d-flex{
@@ -422,7 +427,7 @@ div {
     padding: 20px 0 20px 0;
     background-color: #090c14;
     color: grey;
-    padding-top: -10px;
+    margin-top: 3em;
    
 }
 
