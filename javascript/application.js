@@ -5,22 +5,22 @@ function okCookie() {
 var password = document.getElementById("password-register");
 var confirm_password = document.getElementById("confirm-password-register");
 
-// function validatePassword(){
-//   if(password.innerHTML != confirm_password.innerHTML) {
-//     confirm_password.setCustomValidity("Passwords Don't Match");
-//   } else {
-//     confirm_password.setCustomValidity('');
-//   }
-// }
-// password.onchange = validatePassword;
-// confirm_password.onkeyup = validatePassword;
+function validatePassword(){
+  if(password.innerHTML != confirm_password.innerHTML) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
 
-// $('#password, #confirm_password').on('keyup', function () {
-//     if ($('#password').val() == $('#confirm_password').val()) {
-//       $('#message').html('Matching').css('color', 'green');
-//     } else 
-//       $('#message').html('Not Matching').css('color', 'red');
-//   });
+$('#password, #confirm_password').on('keyup', function () {
+    if ($('#password').val() == $('#confirm_password').val()) {
+      $('#message').html('Matching').css('color', 'green');
+    } else 
+      $('#message').html('Not Matching').css('color', 'red');
+  });
 
 function check(input) {
     if (input.value != document.getElementById('password').value) {
@@ -130,3 +130,10 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
+
+$("#imgshop1, #imgshop2, #imgshop3, #imgshop4, #imgshop5, #imgshop6, #imgshop7, #imgshop8").on("click", function(){
+    let name = $(this).attr("id");
+    let name2 = Number(name.slice(7));
+    let name3 = name2-1;
+    $('#multi-item-example').carousel(name3);
+   });

@@ -121,25 +121,6 @@ font-size: 1rem;
     font-size: 0.8em;
 }
 
-/* Extra small devices (xs) (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) { 
-    
-}
-
-/* Small devices (sm) (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-
-}
-
-/* Medium devices (md) (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-
-}
-
-/* Large devices (lg) (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
-
-}
 
 .jumbotron{
 padding: 0px;
@@ -158,6 +139,10 @@ max-width: 100%;
 max-height: auto;
 z-index: 1;
 filter: brightness(0.5);
+}
+
+.carousel-indicators{
+    margin-bottom: 85px;
 }
 
 /* -- IMAGES CAROUSEL --*/
@@ -221,8 +206,39 @@ color: white;
 .form-control{
     margin-left: 325px;
     filter: opacity(30%);
+    margin-top: -45px;
     }
 /* -- LIGNE LATEST ONLINE MOVIE --*/
+@media(min-width:375px){
+    .redsubtitle{
+        position: sticky;
+        text-align: center;
+        margin-left: -190px;
+        font-size: 2px;
+       
+    }
+    .subtitle{
+        font-size: 2px;
+
+    }
+}
+@media(max-width:767px){}
+@media(min-width:768px){
+    .redsubtitle{
+        text-align: center;
+        margin-left: -190px;
+        font-size: 2px;
+        display: none;
+        margin:0 0px;
+    }
+    .subtitle{
+        display: none;
+        z-index: 0;
+
+    }
+}
+@media(min-width:992px){}
+@media(min-width:1200px){}
 
 .subtitle{
 position: relative;
@@ -248,7 +264,7 @@ margin:0 10px;
 .row1{
 margin-top: -270px;
 margin-left: 425px;
-height: 25px;
+height: 65px;
 }
 
 .d-flex{
@@ -258,42 +274,43 @@ margin-top: 205px;
 /* -- BOUTONS -- */
 
 .btn2{
-    position: relative;
     z-index: 2;
     margin-top: 5px;
-    border-radius: -20%;
-    height: 40px;
-    width: 75px;
-    filter: opacity(60%);
+    filter: opacity(80%);
+    vertical-align: middle;
+    color: white;
+}
+
+.btn2 .btn-secondary .active{
+    position: relative;
+    z-index: 2;
+    margin-top: 15px;
+}
+
+.btn2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item .btn-secondary{
+    background-color: transparent;
+}
+
+.barebtn{
+    background-color: black;
+    color: white;
     font-size: 12px;
-    }
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px 2px;
+}
 
-    .btn2 .btn-secondary .active{
-        position: relative;
-        z-index: 2;
-        margin-top: 15px;
-        }
+.barebtn:hover{
+    background-color: #333;
+}
 
-    .btn2:hover{
-    background-color: red;
-    }
-
-    .barebtn{
-    
-        background-color: black;
-        color: white;
-        font-size: 12px;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        margin: 5px 2px;
-    }
-
-    .barebtn:hover{
-        background-color: #333;
-    }
-
-    .watchbtn{
+.watchbtn{
     position: relative;
     z-index: 2;
     margin-left: 47%;
@@ -302,18 +319,17 @@ margin-top: 205px;
     font-size: 12px;
     filter: opacity(40%); 
     border: none;
-    }
+}
 
-    .watchbtn:hover{
-        background-color:red;
-    }
+.watchbtn:hover{
+    background-color:red;
+}
 
-    .btn-submit{
+.btn-submit{
      margin-bottom: 10px; 
+}
 
-    }
-
-    /* -- FORMULAIRE -- */
+/* -- FORMULAIRE -- */
 
 .form-control{
 
@@ -411,7 +427,7 @@ div {
     padding: 20px 0 20px 0;
     background-color: #090c14;
     color: grey;
-    padding-top: -10px;
+    margin-top: 3em;
    
 }
 
@@ -486,4 +502,16 @@ font-size: 20px;
     color: white;
     min-width: 80px;
     margin-bottom: 10px;
+}
+
+.icon{
+    color: white;
+}
+
+.card-text{
+    color: lightgrey;
+}
+
+.card-title{
+    color: lightgray;
 }
